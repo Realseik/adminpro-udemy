@@ -3,6 +3,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { HeaderComponent } from './header/header.component';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '../../../node_modules/@angular/router';
+import { CommonModule } from '../../../node_modules/@angular/common';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,7 @@ import { NgModule } from '@angular/core';
     NopagefoundComponent,
     SidebarComponent
   ],
-  imports: [],
+  imports: [RouterModule, CommonModule],
   exports: [
     HeaderComponent,
     BreadcrumbsComponent,

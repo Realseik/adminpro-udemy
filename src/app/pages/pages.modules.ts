@@ -9,6 +9,7 @@ import { Graficas1Component } from "./graficas1/graficas1.component";
 import { SharedModule } from "../shared/shared.module";
 import { PAGES_ROUTES } from "./pages.routes";
 import { ChartsModule } from "ng2-charts";
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ChartsModule } from "ng2-charts";
     PagesComponent,
     IncrementadorComponent,
     GraficoDonaComponent,
+    AccountSettingsComponent,
   ],
   imports: [SharedModule, PAGES_ROUTES, FormsModule, ChartsModule],
   exports: [DashboardComponent, ProgressComponent, Graficas1Component],
