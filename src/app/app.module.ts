@@ -15,7 +15,7 @@ import { PagesModule } from "./pages/pages.modules";
 import { ServiceModule } from "./services/service.module";
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent],
+  declarations: [AppComponent, LoginComponent, RegisterComponent ],
   imports: [BrowserModule, APP_ROUTES, PagesModule, FormsModule],
   providers: [ServiceModule],
   bootstrap: [AppComponent]
